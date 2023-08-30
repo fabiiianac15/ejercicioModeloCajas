@@ -5,11 +5,18 @@ body, html{
 header{
     background-color: rgb(229, 255, 0);
     height: 60px;
+    grid-area: header;
 }
 #container{
     width: 1200px;
     margin: 0 auto;
     background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'content content content menu'
+    'footer footer footer footer'
+    ;
 }
 
 section{
@@ -18,17 +25,18 @@ section{
 }
 
 nav{
-    width: 25%;
     background-color: rgb(4, 0, 255);
+    grid-area: menu;
 }
 article{
     height: 240px;
-    width: 75%;
-    background-color: gray
+    background-color: gray;
+    grid-area: content;
 }
 
 footer{
     background-color: aquamarine;
     height: 80px;
+    grid-area: footer;
     
 }
