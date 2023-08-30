@@ -14,16 +14,14 @@ header{
 
 section{
     background-color: rgb(255, 0, 0);
-    overflow: hidden;
+    display: flex;
 }
 
 nav{
-    float: left;
     width: 25%;
     background-color: rgb(4, 0, 255);
 }
 article{
-    float: left;
     height: 240px;
     width: 75%;
     background-color: gray
